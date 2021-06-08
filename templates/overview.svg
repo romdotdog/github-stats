@@ -9,7 +9,7 @@ svg {
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: #151515;
+  fill: #1f1f1f;
   rx: 6px;
   ry: 6px;
 }
