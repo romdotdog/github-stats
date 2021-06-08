@@ -320,8 +320,8 @@ Languages:
                 if repo is None:
                     continue
                 name = repo.get("nameWithOwner")
-                #if name in self._repos:
-                #    continue
+                if name in self._repos:
+                    continue
 
                 self._repos.add(name)
                 self._stargazers += repo.get("stargazers").get("totalCount", 0)
@@ -512,4 +512,4 @@ async def main() -> None:
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.get_event_loop().run_until_complete(main())
